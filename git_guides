@@ -1,0 +1,60 @@
+1. Install Git
+
+sudo apt-get install git
+
+2. Configure GitHub
+
+git config --global user.name "user_name"
+
+git config --global user.email "email_id"
+
+3. Creating a Local Repository
+
+mkdir sample
+
+git init sample
+
+   Initialized empty Git repository in /home/user/sample/.git/
+
+cd sample
+
+4. Creating a README file to describe repository
+
+gedit README or nano README or vi README
+
+type in:  This is a git repo
+
+5. Adding repository files to an index
+
+ex. create a sample c program sample.c
+
+#include<stdio.h>
+int main()
+{
+printf("hello world");
+return 0;
+}
+
+
+add them to the index:
+
+git add README
+
+git add sample.c
+
+
+6. Committing changes made to the index
+
+git commit -m "some_message"
+
+7. Create a repository on Github
+
+- via browser
+
+- Connect to the Repository:
+
+git remote add origin https://github.com/user_name/sample.git
+
+8. Push files from Local Repo to GitHub Repo
+
+git push origin master
