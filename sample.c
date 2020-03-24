@@ -1,4 +1,4 @@
-This is a sample
+Sample
 
 #include<stdio.h>
 int main()
